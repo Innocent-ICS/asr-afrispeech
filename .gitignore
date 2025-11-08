@@ -1,0 +1,265 @@
+# ASR RNN System - .gitignore
+
+# ============================================================================
+# Sensitive Information
+# ============================================================================
+.env
+*.env
+.env.*
+wandb_token.txt
+*_token.txt
+secrets/
+credentials/
+
+# ============================================================================
+# Python
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ============================================================================
+# Experiment Logs and Results
+# ============================================================================
+# TensorBoard logs
+logs/
+tensorboard_logs/
+runs/
+
+# WandB logs
+wandb/
+*.wandb
+
+# Checkpoints and saved models
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# Plots and visualizations
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+plots/
+figures/
+
+# ============================================================================
+# Dataset and Data Files
+# ============================================================================
+# Downloaded datasets
+data/afrispeech_shona/
+data/afrispeech-200/
+data/downloads/
+data/raw/
+data/processed/
+data/cache/
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# CSV and data files
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.parquet
+
+# Compressed files
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+*.7z
+*.gz
+*.bz2
+
+# ============================================================================
+# IDE and Editor Files
+# ============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================================================
+# Kiro IDE
+# ============================================================================
+.kiro/
+*.kiro
+
+# ============================================================================
+# Temporary Files
+# ============================================================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.log
+*.out
+
+# ============================================================================
+# Large Files and Binaries
+# ============================================================================
+# Model weights (if large)
+*.bin
+*.weights
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# Documentation (Generated)
+# ============================================================================
+# Keep main docs, ignore generated ones
+docs/_build/
+docs/.doctrees/
+site/
+
+# ============================================================================
+# Project Specific
+# ============================================================================
+# Test outputs
+test_outputs/
+test_results/
+debug/
+
+# Experiment tracking
+experiments/outputs/
+experiments/results/
+
+# Cache directories
+.cache/
+__pypackages__/
+
+# ============================================================================
+# Keep These Files (Exceptions)
+# ============================================================================
+# Uncomment if you want to track specific files that match patterns above
+# !important_file.csv
+# !example_data.wav
+
+# Keep empty directories with .gitkeep
+!.gitkeep
+
+# Keep requirements and config
+!requirements.txt
+!setup.py
+!setup.cfg
+!pyproject.toml
+
+# Keep documentation
+!README.md
+!LICENSE
+!CONTRIBUTING.md
+!Evaluation_Results.md
