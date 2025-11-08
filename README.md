@@ -303,7 +303,7 @@ The relatively low accuracy scores are expected for this challenging task:
 ```bibtex
 @misc{asr-rnn-system,
   title={ASR RNN System: Comparing Encoder-Decoder Architectures for Shona Speech Recognition},
-  author={Your Name},
+  author={Innocent Farai Chikwanda},
   year={2025}
 }
 ```
