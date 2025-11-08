@@ -236,9 +236,11 @@ Despite improvements, both models show:
 
 ---
 
-## Recommendations
+## Constraints and Recommendations
 
 ### For Better Performance
+
+It is evident that the models are still objectively poor due to the inherent limitations of the model architectures chosen, the layer configurations, the amount of data used, and the limitation of computational resources. Therefore the following strategies are recommended to achieve better performance.
 
 1. **Increase Model Capacity**
    - Use 2-3 layers instead of 1
@@ -267,7 +269,7 @@ Despite improvements, both models show:
 
 ### For Production Use
 
-Given the low accuracy, these models are **not suitable for production** without significant improvements. Consider:
+Given the low accuracy, these models are **not yet suitable for production** without significant improvements. For future implementations the following approaches may be considered.
 
 1. Pre-trained models (Wav2Vec 2.0, Whisper)
 2. Transfer learning from high-resource languages
@@ -285,12 +287,6 @@ However, the absolute performance remains low, indicating that:
 - Larger models with more capacity are required
 - Additional training data or transfer learning would help
 - The task (medical/technical Shona transcription) is inherently challenging
-
-**Next Steps:**
-1. Evaluate LSTM and GRU architectures (with and without attention)
-2. Compare all six models to identify best architecture
-3. Optimize hyperparameters for best-performing model
-4. Consider transfer learning or pre-trained models for production use
 
 ---
 
