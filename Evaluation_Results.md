@@ -288,6 +288,8 @@ However, the absolute performance remains low, indicating that:
 - Additional training data or transfer learning would help
 - The task (medical/technical Shona transcription) is inherently challenging
 
+N.B. This current repository has the ability to train the LSTM and GRU versions of the RNN with and without attention. However due to time constraints those experiments are reserved for the next development cycle.
+
 ---
 
 ## Appendix: Complete Training Logs
